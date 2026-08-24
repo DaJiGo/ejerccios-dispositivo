@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="0,1,2">
+
+    <TableRow android:background="#DDDDDD">
+        <TextView
+            android:layout_span="3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Lista de Productos"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow android:background="#EEEEEE">
+        <TextView android:padding="8dp" android:text="Producto" android:textStyle="bold" />
+        <TextView android:padding="8dp" android:text="Cantidad" android:textStyle="bold" />
+        <TextView android:padding="8dp" android:text="Precio" android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:padding="8dp" android:text="Laptop" />
+        <TextView android:padding="8dp" android:text="1" />
+        <TextView android:padding="8dp" android:text="$45,000" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:padding="8dp" android:text="Mouse" />
+        <TextView android:padding="8dp" android:text="2" />
+        <TextView android:padding="8dp" android:text="$800" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:padding="8dp" android:text="Teclado" />
+        <TextView android:padding="8dp" android:text="1" />
+        <TextView android:padding="8dp" android:text="$1,200" />
+    </TableRow>
+
+    <View
+        android:layout_height="1dp"
+        android:background="#CCCCCC" />
+
+    <TableRow android:background="#DDDDDD">
+        <TextView
+            android:layout_span="2"
+            android:padding="8dp"
+            android:text="Total"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvTotal"
+            android:padding="8dp"
+            android:text="$47,000"
+            android:textStyle="bold" />
+    </TableRow>
+
+</TableLayout>

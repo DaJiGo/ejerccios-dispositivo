@@ -1,0 +1,10 @@
+<!--
+    IMPORTANTE (ej10):
+    Agrega estas 2 líneas dentro de tu archivo
+    res/values/strings.xml (dentro del <resources> ... </resources> existente).
+    Son necesarias para el ActionBarDrawerToggle del Navigation Drawer.
+-->
+<resources>
+    <string name="nav_open">Abrir menú</string>
+    <string name="nav_close">Cerrar menú</string>
+</resources>
