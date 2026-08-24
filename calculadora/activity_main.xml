@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1E1E1E"
+    android:padding="12dp">
+
+    <!-- Pantalla -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom|end"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvOperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="#888888"
+            android:textSize="20sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <!-- Teclado -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button android:id="@+id/btnLimpiar" android:text="C" android:tag="C" style="@style/BotonFuncion" />
+        <Button android:id="@+id/btnBorrar" android:text="⌫" android:tag="DEL" style="@style/BotonFuncion" />
+        <Button android:id="@+id/btnPorcentaje" android:text="%" android:tag="%" style="@style/BotonFuncion" />
+        <Button android:id="@+id/btnDividir" android:text="÷" android:tag="/" style="@style/BotonOperador" />
+
+        <Button android:id="@+id/btn7" android:text="7" android:tag="7" style="@style/BotonNumero" />
+        <Button android:id="@+id/btn8" android:text="8" android:tag="8" style="@style/BotonNumero" />
+        <Button android:id="@+id/btn9" android:text="9" android:tag="9" style="@style/BotonNumero" />
+        <Button android:id="@+id/btnMultiplicar" android:text="×" android:tag="*" style="@style/BotonOperador" />
+
+        <Button android:id="@+id/btn4" android:text="4" android:tag="4" style="@style/BotonNumero" />
+        <Button android:id="@+id/btn5" android:text="5" android:tag="5" style="@style/BotonNumero" />
+        <Button android:id="@+id/btn6" android:text="6" android:tag="6" style="@style/BotonNumero" />
+        <Button android:id="@+id/btnRestar" android:text="−" android:tag="-" style="@style/BotonOperador" />
+
+        <Button android:id="@+id/btn1" android:text="1" android:tag="1" style="@style/BotonNumero" />
+        <Button android:id="@+id/btn2" android:text="2" android:tag="2" style="@style/BotonNumero" />
+        <Button android:id="@+id/btn3" android:text="3" android:tag="3" style="@style/BotonNumero" />
+        <Button android:id="@+id/btnSumar" android:text="+" android:tag="+" style="@style/BotonOperador" />
+
+        <Button android:id="@+id/btnPunto" android:text="." android:tag="." style="@style/BotonNumero" />
+        <Button android:id="@+id/btn0" android:text="0" android:tag="0" style="@style/BotonNumero" />
+        <Button android:id="@+id/btnSigno" android:text="±" android:tag="SIGNO" style="@style/BotonNumero" />
+        <Button android:id="@+id/btnIgual" android:text="=" android:tag="=" style="@style/BotonIgual" />
+
+    </GridLayout>
+
+</LinearLayout>
